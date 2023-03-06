@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: 'Poppins', serif;
+}
+body{
+    background-color: #F0ECF2;
+}
+.navbar{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 20vh;
+    background-color: #2A2540;
+    color: #E9E6F0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 7rem;
+}
+.companyName{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.companyName a{
+    text-decoration: none;
+    color: #E9E6F0;
+}
+.purpleText{
+    color: #8905F1;
+}
+.navbarItems{
+    width: 25%;
+    font-size: 1.2rem;
+    font-weight: 200;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navbarItems a{
+    text-decoration: none;
+    color: #E9E6F0;
+}
+.navbarItems a:hover{
+    text-decoration: none;
+    color: #8905F1;
+}
+.clippyPath{
+    clip-path: polygon(0% 0%, 0% 65%, 22% 99.3%, 22.3% 99.5%, 22.6% 99.7%, 22.9% 99.9%, 23.2% 100%, 23.5% 100%, 23.8% 100%, 26% 99.3%, 100% 65%, 100% 0%);
+    background-color: #2A2540;
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    display: flex;
+}
+.clippyPath::before{
+    content: "";
+    background-image: url(../images/equalizer-g701f38ca8_1280-removebg-preview.png);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.1;
+}
+.intro{
+    position: relative;
+    top: 7vh;
+    left: 7%;
+    color: #E9E6F0;    
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1{
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 2rem;
+    width: 60%;
+}
+
+.intro p{
+    font-size: 1rem;
+    font-weight: 400;
+    padding-bottom: 3rem;
+    width: 70%;
+}
+.entries{
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+.entries input{
+    text-align: center;
+    border-radius: 1rem;
+    border: 1px solid #E9E6F0;
+    background-color: rgba(0, 0, 0, 0);
+    color: #E9E6F0;
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+.intro button{
+    background-color: #8905F1;
+    border: 0px;
+    border-radius: 2rem;
+    padding: 0.5rem 2rem;
+    color: #E9E6F0;
+    font-size: 1rem;
+}
+.intro button:hover{
+    box-shadow: 2px 3px 3px #d5aef2;
+    cursor: pointer;
+}
+.hero{
+    background-image: url(../images/abstract-shape.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 50%;
+    height: 80vh;
+    position: absolute; 
+    top: 18vh;
+    right: 0;
+    z-index: 20;
+}
+#footer{
+    width: 100%;
+    height: 3rem;
+    background-color: #2A2540;
+    color: #E9E6F0;
+}
